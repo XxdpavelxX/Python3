@@ -1,0 +1,32 @@
+Question 1:
+
+
+Why should you not cut and paste the code when working in O'Reilly School of Technology courses? 
+
+Your Answer:
+Because that way you do not think about the code as much as you would if you typed it and you learn less because of it. Typing the code gives a feel for the programming task.
+
+
+Question 2:
+
+What is a working set?
+
+Your Answer:
+A working set is a view of the workspace that behaves like a folder, but it's actually an association of files. Working sets allow you to limit the detail that you see at any given time. The difference between a working set and a folder is that a working set doesn't actually exist in the file system. A working set is a convenient way to group related items together. 
+
+
+Question 3:
+
+What module and variable name contains command-line arguments?
+
+Your Answer:
+The sys module. The argv variable. 
+sys.argv
+
+
+Question 4:
+
+How often should you write tests for your code?
+
+Your Answer:
+All the time.
