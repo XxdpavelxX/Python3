@@ -1,0 +1,44 @@
+Question 1:
+
+Which techniques can be used to receive input from the command line?
+
+Your Answer:
+1.optparse library
+2.argparse
+3.sys.argv
+Mentor Comments:
+right, argparse is another one, very similar to optparse and due to replace it eventually
+(more code probably still uses optparse -- not a bad idea to learn it first, then 
+argparse will seem simple).  Good research.
+
+
+Question 2:
+
+If parser = OptionParser(), how do you add more options?
+
+Your Answer:
+parser.add_option()
+
+
+Question 3:
+
+How do you call for help using optparse?
+
+Your Answer:
+Using the "-h" argument.
+
+
+Question 4:
+
+Does the program run normally when you call for help as in the last answer?
+
+Your Answer:
+No.
+
+
+Question 5:
+
+How do you create a parser error?
+
+Your Answer:
+You can do it using parser.error()
