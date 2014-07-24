@@ -1,0 +1,62 @@
+Question 1:
+
+What is the difference between an iterator and an iterable?
+
+Your Answer:
+1. An iterable is something you can iterate over, and an iterator is what the 
+interpreter uses to do the iteration. Also iterators are guaranteed to 
+have __iter__ and __next__ methods. A for loop will repeatedly trigger 
+the __next__ method.
+
+
+Question 2:
+
+What is a generator function and what is its advantage?
+
+Your Answer:
+A generator function is a function that produces a special type of iterator object (a "generator"). The function namespace is created and initialized with the argument values. The function code only starts executing with the first call to the generator's __next__() method. Execution continues until a yield expression is evaluated: the value of the expression following yield becomes the value of the __next__() method call.
+
+The advantage of generator functions is that they allow you to perform all sorts of complex calculations to produce the values in a sequence, but the code that consumes (makes use of) these values can be entirely separated from the generator that produces them.
+Mentor Comments:
+Here's a generator that appears to give successive digits of pi.  I don't understand how it works but it's clearly a generator function:
+
+def pi_digits():
+    k, a, b, a1, b1 = 2, 4, 1, 12, 4
+    while True:
+        p, q, k = k*k, 2*k+1, k+1
+        a, b, a1, b1 = a1, b1, p*a+q*a1, p*b+q*b1
+        d, d1 = a/b, a1/b1
+        while d == d1:
+            yield int(d)
+            a, a1 = 10*(a%b), 10*(a1%b1)
+            d, d1 = a/b, a1/b1
+
+[  http://mail.python.org/pipermail/edu-sig/2012-December/010728.html ]
+
+>>> pi = pi_digits()
+>>> "".join([str(next(pi)) for i in range(100)]))
+'3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067'
+
+
+Question 3:
+
+Internally, what type of exception does Old-Style Iteration throw? 
+1.AttributeError 
+2.IndexError 
+3.StopIteration 
+4.None of the above
+
+Your Answer:
+2. IndexError
+
+
+Question 4:
+
+Internally, what type of exception does New-Style Iteration throw?
+1.AttributeError 
+2.IndexError 
+3.StopIteration 
+4.None of the above
+
+Your Answer:
+3. StopIteration
