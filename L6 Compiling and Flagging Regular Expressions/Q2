@@ -1,0 +1,22 @@
+Question 1:
+
+How would you write a compiled regular expression to find the name "John Smith" in case-insensitive format?
+ 
+Your Answer:
+import re
+text = "Random text with john Smith"
+name = re.compile("John Smith",re.IGNORECASE)
+found = name.search(text)
+found.group()
+
+
+Question 2:
+
+How would you rewrite the compiled regular expression above to include verbose comments?
+
+Your Answer:
+import re
+text = "Random text with john Smith"
+name = re.compile("John Smith",re.IGNORECASE | re.VERBOSE)
+found = name.search(text)
+found.group()
