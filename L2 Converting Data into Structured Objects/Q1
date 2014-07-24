@@ -1,0 +1,31 @@
+Question 1:
+
+
+What is a good way to manage data and its custom behaviors across multiple programs?
+
+Your Answer:
+Object Oriented Programming.
+
+
+
+Question 2:
+
+
+What is a bunch class?
+
+Your Answer:
+A bunch class takes incoming data and saves it as attributes.
+
+
+
+Question 3:
+
+
+Should you include a test for code inside the main program, and why or why not?
+
+Your Answer:
+No. The code would always imports the unittest module even when it is not going to be used 
+(when the module is imported rather than running as a main program). You can correct this by moving both
+the import of unittest and the code for the test class itself so that these pieces of code are only 
+executed when required. Also writing tests seperately makes code more straightforward and does not 
+cause additional work when testing is not required.
