@@ -1,0 +1,23 @@
+Question 1:
+
+What is the alternative name for special methods?
+ 
+Your Answer:
+Magic methods.
+
+
+Question 2:
+
+Which special method is called by the print() built-in?
+ 
+Your Answer:
+__str__()
+
+
+Question 3:
+
+Trick question! If __setattr__ sets attributes and __delattr__ deletes attributes, what method gets attributes?
+ 
+
+Your Answer:
+__getattribute__ is used. __getattr__ would not necessarily be used for this.
