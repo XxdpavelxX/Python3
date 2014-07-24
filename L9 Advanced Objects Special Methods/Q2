@@ -1,0 +1,14 @@
+Question 1:
+
+What is a class that only possesses behaviors, not data and is meant to be inherited rather than instantiated on its own?
+ 
+Your Answer:
+A mixin class is a class that contains a certain behavior to be inherited by subclasses to add specific behaviors.
+
+
+Question 2:
+
+What method do you use to make an object act like a function?
+ 
+Your Answer:
+Implementing the __call__() method allows you to make your instances callable, just as though they were regular functions
