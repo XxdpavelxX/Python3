@@ -1,0 +1,14 @@
+Question 1:
+
+What are some advantages of compiled regular expression methods over re module functions?
+
+Your Answer:
+1. It is more efficient, has better performance.
+2. They are more readable.
+
+
+Question 2:
+
+How would you compile the regular expression "\d{3}"?
+Your Answer:
+re.compile("\d{3}")
