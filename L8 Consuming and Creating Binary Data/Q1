@@ -1,0 +1,37 @@
+Question 1:
+
+Name at least two differences between ASCII and Unicode.
+ 
+Your Answer:
+1) ASCII has 128 characters, while unicode has much more than that.
+2)Unicode can use either 8, 16, or 32 bit characters while ASCII uses 7-bit encoding.
+
+
+ASCII is an 8-bit encoding but with leading bit originally reserved for "parity check".  When that was dropped, 
+another 128 for
+256 could be added, but no single standard emerged plus 256 was hopelessly small anyway.
+
+Unicode is Python's native encoding but it has to/from encodings to multiple string / formatting representations,
+including
+more than one way of saving Unicode.  UTF-8 is the most popular Unicode encoding standard.  It's variable width meaning
+it matches ASCII for the first 127, than hugs close to Latin-1 for the 256, than takes off into everything else, 
+including all Chinese characters.
+
+
+Question 2:
+
+What module does Python use to interact with binary data?
+ 
+Your Answer:
+The struct module.
+
+
+Question 3:
+
+What do the pack() and unpack() methods of the struct module do?
+ 
+Your Answer:
+pack(): Works by taking various Python data and converting them to a bytes object that can be stored or transmitted for
+other programs to interpret.
+
+unpack(): Does the opposite of pack().Leta you interpret binary data and convert it to the appropriate Python data types.
