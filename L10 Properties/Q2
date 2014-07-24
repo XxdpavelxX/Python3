@@ -1,0 +1,22 @@
+Question 1:
+
+Can a class inherit its parent's properties? 
+
+Your Answer:
+Yes it can.
+
+
+Question 2:
+
+Name a disadvantage to using properties.
+
+Your Answer:
+They take more work to use.
+
+
+Question 3:
+
+What exception should you raise when some code tries to set a read-only property? 
+
+Your Answer:
+AttributeError
