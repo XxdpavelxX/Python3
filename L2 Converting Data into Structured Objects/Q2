@@ -1,0 +1,54 @@
+Question 1:
+
+What is masking?
+
+Your Answer:
+Masking is overriding the value of a method with another value.
+
+Example:
+
+>>> class Zorro:
+        """
+        http://youtu.be/gTfdiHxYivA
+        """
+	def sign_of_Z(self):
+		return "Z sign"
+
+	
+>>> z = Zorro()
+>>> z.sign_of_Z()
+'Z sign'
+>>> z.sign_of_Z = "X"
+>>> z.sign_of_Z()
+Traceback (most recent call last):
+  File "", line 1, in 
+    z.sign_of_Z()
+TypeError: 'str' object is not callable
+Question 2:
+
+What do the getattr, hasattr and setattr functions do?
+
+Your Answer:
+ getattr: is used to fetch an attribute from an object, using a string object instead of an identifier to identify the attribute.
+ hasattr: Used to see if an object has the specified attribute. Returns true if it has, or false if it doesnt have. 
+ setattr: Can have 3 arguments. The arguments are an object, a string and an arbitrary value. The string may name an existing attribute or a new attribute. The function assigns the value to the attribute, provided the object allows it. For example, setattr(x, 'foobar', 123) is equivalent to x.foobar = 123. Can create new attributes.
+
+
+Question 3:
+
+What is critical in creating an API? 
+
+Your Answer:
+Help output, because it allows you to see your code through the eyes of another programmer.
+
+
+Question 4:
+
+In "class Monty(Cleese, Chapman, Idle, Palin)" which inherited class has precedence ? 
+1.Chapman 
+2.Idle 
+3.Palin 
+4.None of the above.
+
+Your Answer:
+4. None of the above. (Cleese would have priority.)
