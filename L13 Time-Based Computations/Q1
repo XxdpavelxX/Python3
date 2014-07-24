@@ -1,0 +1,32 @@
+Question 1:
+
+What are Python's standard library time-handling modules? 
+
+Your Answer:
+1) datetime, 2) time, 3) calendar
+
+
+Question 2:
+
+Which date system does the astronomy community use to track time?
+
+Your Answer:
+The Julian Date System
+
+
+Question 3:
+
+What is the difference between the strptime() and strftime() methods?
+
+Your Answer:
+strptime(): converts strings to date objects
+
+strftime(): converts date objects into desired format strings.
+
+
+Question 4:
+
+What is a timedelta?
+
+Your Answer:
+Timedelta is an object in the datetime library which represents the difference between two dates or times.
