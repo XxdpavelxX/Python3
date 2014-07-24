@@ -1,0 +1,34 @@
+Question 1:
+
+Are Properties more or less specific than the special attribute methods? Explain your answer. 
+
+Your Answer:
+Properties are more specific.
+Properties let you assign computations to accesses involving a specific attribute, so if you inherit the class, you can
+easily extend it without having to dance around the subtleties of __getattr__().
+
+
+Question 2:
+
+What is the customary prefix character on the storage field of a property? 
+
+Your Answer:
+-
+
+
+Question 3:
+
+What is the decorator for turning the time() method into a property setter? Your answer should replace the ??? below: 
+
+???def time(self, value):  self._time = value
+Your Answer:
+@time.setter
+
+
+Question 4:
+
+What is the decorator for turning the time() method into a property getter--what replaces the ??? below? 
+
+???def time(self): return self._time
+Your Answer:
+@property
