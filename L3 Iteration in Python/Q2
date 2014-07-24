@@ -1,0 +1,37 @@
+Question 1:
+
+With a single line of code, create a memory efficient iterator from which a for loop could obtain a million numbers. What is the technique called?
+
+Your Answer:
+a = (c for c in range(0, 1000000))
+This technique is known as generator expression.
+Mentor Comments:
+a = (c for c in range(1000000))
+
+
+Question 2:
+
+
+What is the difference between list comprehension and a generator expression?
+
+Your Answer:
+They are used in different circumstance. For example:
+
+If a result has to be stored and iterated more than one time, then a list comprehension is used because generator expression will only iterate one time.
+
+On the other hand, when data range is very large or infinite, a generator expression is better to use because it can create items as it goes and takes up less space in the memory.
+Mentor Comments:
+right.  A trend in computing which Agile encompasses is "just in time" meaning don't compute it before you need it, as you may end up not needing it
+
+
+Question 3:
+
+What is the tool used in the correct answer to question 1 above?
+1.list comprehension 
+2.tuple 
+3.generator expression
+4.list generator 
+5.None of the above
+
+Your Answer:
+3. generator expression.
