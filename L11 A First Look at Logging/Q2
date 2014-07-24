@@ -1,0 +1,22 @@
+Question 1:
+
+What is another way to set the level of a logger besides the basicConfig() function?
+
+Your Answer:
+You can use the setLevel() function.
+
+
+Question 2:
+
+What is a common way to display the time of a log message?
+
+Your Answer:
+Using %(asctime).
+
+
+Question 3:
+
+What does '%(lineno)d %(levelname)s' display in a log message?
+
+Your Answer:
+The line number and text logging level for the message.
