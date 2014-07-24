@@ -1,0 +1,32 @@
+Question 1:
+
+What are the three commonly held fundamental concepts of object-oriented programming?
+
+Your Answer:
+Encapsulation, Inheritance, Polymorphism
+
+
+Question 2:
+
+What is inheritance?
+
+Your Answer:
+Inheritance is the ability to define a new class that is a modified version of an existing class. It is called “inheritance” because the new class inherits the methods of the existing class. The existing class is called the parent and the new class is called the child.
+
+
+Question 3:
+
+If Encapsulation is the idea that the only way to access or change the data inside an object is by calling its methods, what is Python's take on it?
+
+Your Answer:
+This idea has never really gained much ground in the Python world, and it is normally considered acceptable to both read and set an object's attributes from anywhere in a program.
+
+
+Question 4:
+
+What is the method resolution order for class Puppy(Dog, Young, Untrained)? 
+ 
+Your Answer:
+The resolution order is from left to right. First Dog, second Yound, and last Untrained
+Mentor Comments:
+these baseclasses may themselves have baseclasses in which case the MRO is more twisted, but still hits them in the order you show, with other stuff in between.
