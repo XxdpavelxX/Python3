@@ -1,0 +1,22 @@
+Question 1:
+
+What is the best way to validate a string that is supposed to represent a date?
+
+Your Answer:
+Via the strptime() method checking the string's date format
+
+
+Question 2:
+
+Using datetime.datetime, how do I construct a datetime object for '07-24-1985 2:00 AM'?
+
+Your Answer:
+datetime(1985, 07, 24, 2)
+
+
+Question 3:
+
+If my_date is the name of my datetime object, how do I get its hour?
+
+Your Answer:
+my_date.hour
