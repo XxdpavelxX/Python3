@@ -1,0 +1,22 @@
+Question 1:
+
+Provide a regular expression pattern that will find 3 adjacent digits.
+
+Your Answer:
+re.search("\d\d\d", "String with 3 adjacent digits")
+
+
+Question 2:
+
+If a re.match() or re.search() fails to find anything, what kind of object does it return?
+
+Your Answer:
+A NoneType Object.
+
+
+Question 3:
+
+What method returns the found pattern string in a match object?
+
+Your Answer:
+group() method
